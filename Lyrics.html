@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyrics</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Producto 1</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>Producto 2</td>
+                <td>$20.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total = $30.00</td>
+        </tfoot>
+    </table>
+
+    <!--Lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <!--Lista ordenada-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">Elemento 1</li>
+                <li style="list-style-type: lower-alpha;">Elemento 2</li>
+                <li style="list-style-type: lower-alpha;">Elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <form action="/formulario" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea rows="10" cols="50" name="comentario" id="comentario" placeholder="comentario"></textarea>
+        <br>
+        <button type="button">Tipo boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+
+
     <h1>Take On Me</h1>
     <H4>Song by A-ha</H4>
     <a href="">Original Video</a> 
@@ -33,7 +97,7 @@
         Take on me (take on me)
         Take me on (take on me)
         I'll be gone
-        In a day or two
+        In a day or two 
     </pre>
     <hr>
     <a href="https://www.letras.com/a-ha/320/" target="_blank" title="Take On Me - A-ha">
@@ -41,5 +105,15 @@
     </a>
     <hr>
     <a href="HolaMundo.html">HolaMundo</a>
+    <p>Lorem ipsum dolor sit amet consectetur <br>
+        adipisicing elit. Ratione ipsa beatae <br>
+        velit <span style="color: aqua;">assumenda dolor</span> eum magni odio <br>
+        omnis accusamus molestias et aspernatur <br>
+        repellat suscipit necessitatibus, asperiores est error <br>
+        Impedit, suscipit.
+    </p>
+    <hr>
+    <! Propiedades de la imagen>
+    <img src="Imagenes/Tohru.jpg" width="250" />
 </body>
 </html>
